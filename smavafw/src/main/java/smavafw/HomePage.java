@@ -2,6 +2,7 @@ package smavafw;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
 	
@@ -24,19 +25,24 @@ public class HomePage {
 		Browser.amt_field1(url).click();
 		Browser.amt_field2(url).click();
 		
+		WebDriverWait wait = new WebDriverWait(Browser.driver, 10);
+		
 	}
 
 	public void durEnter() {
 		Browser.dur_field1(url).click();
 		Browser.dur_field2(url).click();
 		Browser.dur_field3(url).click();
+		
+		WebDriverWait wait = new WebDriverWait(Browser.driver, 10);
 	}
 
 	public void reasonEnter() {
 		
 		Browser.reason_field2(url).click();
 		Browser.reason_field3(url).click();
-				
+		
+		WebDriverWait wait = new WebDriverWait(Browser.driver, 10);
 	}
 
 	public void clickNext() {

@@ -9,9 +9,11 @@ public class Browser {
 	
 static WebDriver driver = new ChromeDriver();
 
-	
-	public static  void goTo(String url) {
+
+
+public static  void goTo(String url) {
 		
+	
 		driver.get(url);
 		
 			}
@@ -19,22 +21,25 @@ static WebDriver driver = new ChromeDriver();
 	
 	public static String title() {
 		
+		
+		
 		return driver.getTitle();
 	}
 
 	
 	
+	
 	public static WebElement amt_field1(String url) {
 		
-	WebElement amt_1=	driver.findElement(By.id("myselect"));
-	
-	return amt_1;
+		WebElement amt_1=driver.findElement(By.id("myselect"));	
+		
+	return  amt_1;
 		}
 
 
 	public static WebElement amt_field2(String url) {
 		
-		WebElement amt_2=	driver.findElement(By.xpath("//*[@id='myselect']/div/div[2]/div[10]"));
+		WebElement amt_2=driver.findElement(By.xpath("//*[@id='myselect']/div/div[2]/div[10]"));
 		
 		return amt_2;
 	}
@@ -182,6 +187,3 @@ static WebDriver driver = new ChromeDriver();
 	
 	
 }
-
-
-
