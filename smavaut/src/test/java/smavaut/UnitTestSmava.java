@@ -2,6 +2,7 @@ package smavaut;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import smavafw.Browser;
 import smavafw.Pages;
@@ -18,7 +19,7 @@ public class UnitTestSmava {
 		
 		//Enter the loan amount
 		Pages.homePage().amtEnter();
-		
+			
 		//Enter the duration of the loan
 		Pages.homePage().durEnter();
 		
@@ -42,6 +43,7 @@ public class UnitTestSmava {
 	@Test 
 	public void noLogin() {
 		
+		//Pages.homePage();
 		//Go to Home page of Smava.de
 		Pages.homePage().goTo();
 		
